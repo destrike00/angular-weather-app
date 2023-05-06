@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="upper-data">
+    <img src="../assets/day.jpg" *ngIf="14 > 15" />
+    <img size="25" src="../assets/night.jpg" *ngIf="14 <= 15" />
+
+    <div class="weather-data">
+      <div class="location">Budapest</div>
+      <div class="temperature">{{ 14.4 | number : "1.0-0" }}°C</div>
+    </div>
+  </div>
+  <div class="lower-data">
+    <div class="more-info-label">További információ</div>
+    <div class="more-info-container">
+      <div class="info-block">
+        <div class="info-block-label">
+          <span>min</span>
+        </div>
+        <div class="inflo-block-value">10°C</div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
